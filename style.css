@@ -1,253 +1,101 @@
 @font-face {
     font-family: montserrat;
-    src: url(fonts/Montserrat.ttf);
+    src: url(assets/fonts/Montserrat.ttf);
 }
 
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html {
+    box-sizing: border-box;
+
+}
 
 body {
     font-family: montserrat;
     font-style: normal;
-    color: #fff;
+    font-size: 15;
+    background: #191919;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: #191919;
+}
+
+/* Шапка */
+
+header {
+    padding: 15 15;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    z-index: 99999;
 }
 
 
-.slider img {
-    width: 100%;
-    height: auto;
-}
+header .search {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: center;
+    padding: 0 15;
 
-.slider {
-    z-index: 9;
-    width: min-content;
-    height: 290px;
-    overflow: hidden;
-    margin: 0 0 7px;
-    position: relative;
-}
-
-.slider ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
 
 }
 
-#slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 500px;
-    height: 300px;
-    text-align: center;
-    line-height: 300px;
-}
-
-input {
+header .search input {
+    color: #434343;
+    font-weight: 600;
+    width: 1000px;
     outline: none;
     border: 0px;
     background: transparent;
-    align-content: center;
-    height: 100%;
 }
 
+header .search img {
+    height: 20;
+}
 
-header {
-    background-color: #1F1F1F;
+header .logIn {
     display: flex;
-    justify-content: space-between;
-    padding: 0 15;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-    z-index: 1;
-    height: 7%;
-    min-height: 72px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.panelMore {
+/* Main */
+main {
+    padding: 25;
+}
+
+/* Слайдер */
+
+.swiper-slide {
     display: flex;
-}
-
-.panelMore .botton_leftPanel img {
-    margin: auto;
-    padding-right: 33;
-    width: 29;
-    height: 24;
-}
-
-.logo {
-    margin: auto 0;
-    height: 29;
-    width: 154;
-}
-
-header label {
-    display: flex;
-}
-
-header label p {
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.search {
-    width: 30%;
-    display: flex;
-    background-color: #fff;
-    padding: 5;
-    border-radius: 5px;
-    margin: 15;
-}
-
-.search input {
-    width: 100%;
-    margin: 0;
-}
-
-
-.search img {
-    display: flex;
-    margin: 5;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-.pushPopUps {
-    display: none;
-    background-color: #262626;
-    position: fixed;
-    height: 50%;
-    width: 90%;
-    min-width: 400px;
-    min-height: 400px;
-    max-width: 600px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-    transition: all 400ms ease-in-out;
-    z-index: 99;
-}
-
-.pushPopUps .head {
-    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-    background-color: #232323;
-    height: 15%;
-    width: 100%;
-    display: flex;
-    min-height: 70;
-}
-
-.pushPopUps .head p {
-    margin: auto 0;
-    padding-left: 15px;
-    font-size: 20;
-}
-
-.pushPopUps .body {
-    height: 85%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-.pushPopUps .body .panel p {
-    color: black;
-    margin: 0;
-    font-size: 12;
+.swiper-pagination-bullet {
+    width: 15;
+    height: 15;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
 }
 
-.pushPopUps .body .panel {
-    width: 70%;
-    background-color: #E5E5E5;
-    padding: 7;
-    border-radius: 5px;
-    margin: 5 auto;
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-}
-
-.pushPopUps .body .panel input {
-    width: 95%;
-}
-
-.pushPopUps .body .panel div {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-
-.pushPopUps .body .panel div img {
-    width: 25px;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.pushPopUps .body .button {
-    display: flex;
-    width: 70%;
-    background-color: #2a2a2a;
-    padding: 7;
-    border-radius: 5px;
-    margin: 0 auto;
-    height: 10%;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
-    margin-top: 10;
-    cursor: pointer;
-}
-
-.pushPopUps .body .button p {
-    margin: auto;
-}
-
-.pushPopUps .body .button:hover {
-    background-color: #302f2f
-}
-
-.pushPopUps .body .button:active {
-    background-color: #353535;
-    transform: translateY(2px);
-}
-
-
-
-
-.leftPanel {
-    background: #262626;
-    height: 100%;
-    padding: 0;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    transition: all 400ms ease-in-out;
-    position: absolute;
-
-    transform: translateX(calc(-100%));
-    will-change: transform;
-    z-index: 99;
-}
-
-
-.botton_leftPanel {
-    cursor: pointer;
-    display: flex;
-}
-
-/* Активация панели */
-.open:checked~.leftPanel_point .leftPanel {
-    transform: translateX(0);
-    padding-right: 30;
-}
-
-.hidePopups:checked~.pushPopUps {
-    display: block;
+.swiper-pagination-bullet-active {
+    background: #ffffff;
 }

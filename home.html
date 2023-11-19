@@ -2,228 +2,67 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Page Title</title>
+    <title>Iconic Tv</title>
     <meta name="viewport" content="width=device-width">
+    <link href="js/swiper/swiper-bundle.css" rel="stylesheet" type="text/css">
+
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<input class="hidePopups" id="popups" type="checkbox" hidden>
-<input class="open" id="top-box" type="checkbox" hidden>
 
-<body style=" margin: 0px;display: flex;flex-direction: column;background: #191919;">
 
-    <div class="pushPopUps">
-        <div class="head">
-            <p>Окно входа</p>
-        </div>
+<body>
 
-        <div class="body">
-            <div class="panel">
-                <b>
-                    <p>Логин</p>
-                </b>
-
-                <input type="text">
-
-            </div>
-            <div class="panel">
-                <b>
-                    <p>Пароль</p>
-                </b>
-                <div>
-                    <input type="text">
-                    <img src="img/ear.png">
-                </div>
-
-            </div>
-            <label class="button" for="popups">
-                <p>Ок</p>
-
-            </label>
-        </div>
-    </div>
-
+    <!-- Шапка -->
 
     <header>
-        <div class="panelMore">
-            <label class="botton_leftPanel" for="top-box">
-                <img src="img/more.png">
-            </label>
 
+        <!-- Лого -->
 
-            <img class="logo" src="img/Iconic Tv.png" style="height: 50%;">
-
+        <div lass="logo">
+            <img src="/assets/logo/Iconic Tv.svg"></img>
         </div>
+
+        <!-- Поиск -->
+
         <div class="search">
-
-
-            <input placeholder="Поиск" type="text">
-
-            <img src="img/search.png"></img>
-
+            <input placeholder="поиск" type="text">
+            <a href="#">
+                <img src="/assets/icons/search.svg"></img>
+            </a>
         </div>
-        <label for="popups">
-            <p>Войти</p>
-        </label>
 
+        <!-- Кнопка входа -->
 
+        <div class="logIn">
+            <a href="#"> ВОЙТИ</a>
+        </div>
 
     </header>
 
-
-    <div class="leftPanel_point" style="background: #191919;height: 100%">
-        <div class="leftPanel">
-            <div style="display: flex;flex-direction: column;margin: 20;">
-                <b style="margin-bottom: 10; cursor: pointer;">
-                    <p style="margin: 0px">Фильмы</p>
-                </b>
-                <b style="margin-bottom: 10; cursor: pointer;">
-                    <p style="margin: 0px">Сериалы</p>
-                </b>
-                <b style="margin-bottom: 10; cursor: pointer;">
-                    <p style="margin: 0px">Мультфильмы</p>
-                </b>
-            </div>
-        </div>
-        <div>
-            <div style="display: flex;flex-direction: column;align-content: center;flex-wrap: wrap;">
-                <div class="slider" id="slider" style="display: flex;justify-content: center;">
-                    <ul>
-                        <li><img src="i/1.jpg" alt=""></li>
-                        <li><img src="i/2.jpg" alt=""></li>
-                        <li><img src="i/3.jpg" alt=""></li>
-                        <li><img src="i/4.jpg" alt=""></li>
-                        <li><img src="i/5.jpg" alt=""></li>
-                    </ul>
+    <main>
+        <!-- Популярное/новое -->
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/image/1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image/2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image/3.png">
+                    </div>
                 </div>
-                <div style="display: flex;flex-direction: row;">
-                    <button id="button1" style="
-                        width: -webkit-fill-available;
-                        border: none;
-                        padding: 15px 32px;
-                        font-size: 16px;
-                        background-color: #ffffff;
-                        box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
-                        cursor: pointer;">пред
-                    </button>
-
-                    <button id="button2" style="
-                        width: -webkit-fill-available;
-                        border: none;
-                        color: white;
-                        padding: 15px 32px;
-                        font-size: 16px;
-                        background-color: #2a2a2a;
-                        box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
-                        cursor: pointer;">след
-                    </button>
-                </div>
-
-
-                <script src="jquery-3.6.3.js" type="text/javascript"></script>
-                <script src="js.js" type="text/javascript"></script>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
+        <!-- swiper/slider -->
+        <script src="js/swiper/swiper-bundle.min.js"></script>
 
-        <div style="padding: 10px;">
-
-            <b>
-                <p style="font-size: 25px;margin-bottom: 5;">Фильмы</p>
-            </b>
-            <div class="watch">
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-                <div class="watch_block">
-                    <div style="display: flex;">
-                        <img src="img/emty.png" class="watch_block_img">
-                    </div>
-                    <div>
-                        <b>
-                            <p style="margin: 0px">Название</p>
-                        </b>
-                        <p style="margin: 0px">2020 * жанр</p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
+        <!--mainJS -->
+        <script src="js/main.js"></script>
 
 </body>
 
