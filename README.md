@@ -1,3 +1,6 @@
 # iconicTv
 
-Макет https://www.figma.com/file/l4KfBmx72EjWWbhvBYY1Wh/Untitled?type=design&node-id=0%3A1&mode=design&t=f9gwqA0muqrbFtPq-1
+## Макет
+
+![](https://github.com/Dontlikeouy/iconicTv/assets/86613662/56b4cc17-d03a-48dd-97b1-79a44b2ef7a4)
+
