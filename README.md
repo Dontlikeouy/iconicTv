@@ -10,6 +10,9 @@
  - вксплывающие окно авторизации на сайт;
  - поле поиска по названию.
 
+## Схема страницы сайта
+![](https://github.com/Dontlikeouy/iconicTv/assets/86613662/4ed01193-3afc-43e4-a8d5-4e7f185954b7)
+
 ## Макет
 
 ![](https://github.com/Dontlikeouy/iconicTv/assets/86613662/56b4cc17-d03a-48dd-97b1-79a44b2ef7a4)
